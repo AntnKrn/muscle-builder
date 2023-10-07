@@ -1,7 +1,7 @@
 import React from "react";
-import './Main.css';
+import './Muscles.css';
 
-const Main = () => {
+const Muscles = () => {
     return (
         <main>
             <div className="front-body-wrapper">
@@ -37,4 +37,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Muscles;

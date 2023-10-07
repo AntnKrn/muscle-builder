@@ -1,19 +1,20 @@
 import React from "react";
-import './Header.css'
+import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
     return (
-        <header>
-            <h1 className="name">sportapp</h1>
-                <nav>
-                    <ul className="navigation">
-                        <li className="navigation-item"><a className="navigation-item-link" href="www.dsadsadsadsadsfagf.com">Exercises</a></li>
-                        <li className="navigation-item"><a className="navigation-item-link" href="www.dsadsadsadsadsfagf.com">Calorie Calculator</a></li>
-                        <li className="navigation-item"><a className="navigation-item-link" href="www.dsadsadsadsadsfagf.com">News</a></li>
-                        <li className="navigation-item"><a className="navigation-item-link" href="www.dsadsadsadsadsfagf.com">Login</a></li>
-                    </ul>
-                </nav>
-        </header>
+            <header>
+                    <h1 className="name"><NavLink to="/">sportapp</NavLink></h1>
+                        <nav>
+                            <ul className="navigation">
+                                <li className="navigation-item"><NavLink className="navigation-item-link" to="/exercises" exact="true">Exercises</NavLink></li>
+                                <li className="navigation-item"><NavLink className="navigation-item-link" to="/calculator" exact="true">Calorie Calculator</NavLink></li>
+                                <li className="navigation-item"><NavLink className="navigation-item-link" to="/news" exact="true">News</NavLink></li>
+                                <li className="navigation-item"><NavLink className="navigation-item-link" to="/authorization" exact="true">Login</NavLink></li>
+                            </ul>
+                        </nav>
+            </header>
     )
 }
 
