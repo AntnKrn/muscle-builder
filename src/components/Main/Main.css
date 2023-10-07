@@ -1,0 +1,25 @@
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.ul-body {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.front-body-item {
+    margin: 30px;
+}
+
+.back-body-item {
+    text-align: right;
+    margin: 30px;
+}

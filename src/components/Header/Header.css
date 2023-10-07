@@ -1,17 +1,10 @@
-
-body, html {
-    background-color: #4FC3F7;
-    margin: 0px;
-    padding: 0px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-h1{
+.name{
     font-size: 30px;
     order: 1;
     margin-left: 15px;
@@ -21,31 +14,31 @@ nav {
     order: 2;
 }
 
-ul {
+.navigation {
     padding: 0px;
     margin: 0px;
     list-style: none;
 }
 
-li {
+.navigation-item {
     display: inline;
     margin-left: 20px;    
     font-size: 30px;
     margin-right: 15px;   
 }
 
-li a {
+.navigation-item-link {
     text-decoration: none;
     color: #18346b;
     border-radius: 5px;
 }
 
-li a:visited {
+.navigation-item-link:visited {
     text-decoration: none;
     color: #18346b;
 }
 
-li a:hover {
+.navigation-item-link:hover {
     background-color: rgb(91, 98, 174);
     color: #162748;
     transition: 1.5s;

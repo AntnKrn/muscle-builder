@@ -1,10 +1,55 @@
-img {
-    display: inline-block;
-    text-align: right;
+.newsletter {
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
 }
 
-p {
-    display: inline-block;
-    width: 700px;
-    margin: 0px
+.subscribe-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+}
+
+form {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 100px;
+    position: relative;
+}
+
+.email {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.email:active {
+
+}
+  
+.sub-button {
+    position: absolute;
+    bottom: 1px;
+    left: 225px;
+    height: 30px;
+    width: 75px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.copyrights {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 28px;
+    height: 28px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
