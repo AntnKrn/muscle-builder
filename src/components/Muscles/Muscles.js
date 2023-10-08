@@ -2,35 +2,36 @@ import React from "react";
 import './Muscles.css';
 
 const Muscles = () => {
+    const frontBodyParts = [
+        "abs", "abs", "abs",
+        "abs", "abs", "abs",
+        "abs", "abs", "abs",
+        "abs", "abs", "abs"
+    ]
+
+    const backBodyParts = [
+        "abs", "abs", "abs",
+        "abs", "abs", "abs",
+        "abs", "abs", "abs",
+        "abs", "abs", "abs"  
+    ]
+
+    const renderLinksBodyParts = (parts, className) => {
+        return parts.map((part, index) => {
+            return <li className={className} key={index}>{part}</li>
+        })
+    }
     return (
         <main>
             <div className="front-body-wrapper">
                 <ul className="ul-body">
-                    <li className="front-body-item">Abs</li>
-                    <li className="front-body-item">arms</li>
-                    <li className="front-body-item">sadda</li>
-                    <li className="front-body-item">dsadsada</li>
-                    <li className="front-body-item">arms</li>
-                    <li className="front-body-item">sadda</li>
-                    <li className="front-body-item">dsadsada</li>
-                    <li className="front-body-item">arms</li>
-                    <li className="front-body-item">sadda</li>
-                    <li className="front-body-item">dsadsada</li>
+                    {renderLinksBodyParts(frontBodyParts, "front-body-item")}
                 </ul>
             </div>
 
             <div className="back-body-wrapper">
                 <ul className="ul-body">
-                    <li className="back-body-item">Abs</li>
-                    <li className="back-body-item">arms</li>
-                    <li className="back-body-item">sadda</li>
-                    <li className="back-body-item">dsadsada</li>
-                    <li className="back-body-item">arms</li>
-                    <li className="back-body-item">sadda</li>
-                    <li className="back-body-item">dsadsada</li>
-                    <li className="back-body-item">arms</li>
-                    <li className="back-body-item">sadda</li>
-                    <li className="back-body-item">dsadsada</li>
+                    {renderLinksBodyParts(backBodyParts, "back-body-item")}
                 </ul>
             </div>
         </main>

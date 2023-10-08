@@ -1,0 +1,16 @@
+.calories-wrapper {
+    width: auto;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calories-form {
+    margin: 0px;
+    padding: 0px;
+}
+
+.calories {
+
+}

@@ -11,7 +11,7 @@ const Home = () => {
             <Muscles />
             <Footer />
         </React.Fragment>
-    )
-}
+    );
+};
 
 export default Home;
